@@ -1,5 +1,8 @@
 # gulp4 / Landing Page / WordPress
 
+### Подкачать зависимости
+`nmp i`
+
 ### Собрать сборку   
 `gulp build`
 
