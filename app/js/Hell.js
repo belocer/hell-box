@@ -53,9 +53,9 @@ window.addEventListener('load', () => {
         poem.style.opacity = '0';
         demon.style.display = 'block'
         setTimeout(() => {
-            //blackLayer.classList.add('demon__blackLayerAnimate')
-            //redLayer.classList.add('demon__redLayerAnimate')
-            //eye.classList.add('demon__eyeAnimate')
+            blackLayer.classList.add('demon__blackLayerAnimate')
+            redLayer.classList.add('demon__redLayerAnimate')
+            eye.classList.add('demon__eyeAnimate')
         }, 1000);
 
         let x = -300
@@ -71,5 +71,7 @@ window.addEventListener('load', () => {
         setTimeout(() => window.location.reload(), 6000)
     }, 30000);
 
-    setTimeout(() => document.getElementById('music').play(), 115)
+    //setTimeout(() => document.getElementById('music').play(), 115)
+    let mus =  document.getElementById('music')
+    mus.addEventListener('canplay', () => mus.play());
 })
